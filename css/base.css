@@ -25,6 +25,7 @@ body {
 main {
 	width: 100%;
 	overflow: hidden;
+	position: relative;
 }
 
 /* Page Loader */
@@ -106,15 +107,16 @@ a:focus {
 }
 
 .frame__heading {
-	margin: 0;
+	margin: 1rem 0;
 	font-size: 1rem;
 	font-weight: 400;
 }
 
 .frame__counter {
-	display: flex;
+	margin: 2rem 0;
 	align-items: baseline;
 	line-height: 0.8rem;
+	text-align: center;
 }
 
 .frame__counter span {
@@ -131,7 +133,6 @@ a:focus {
 
 .intro {
 	pointer-events: none;
-	min-height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -161,6 +162,10 @@ a:focus {
 	background-color: currentColor;
 }
 
+.grid-wrap {
+	position: relative;
+}
+
 .grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, calc(390px + 3rem)));
@@ -173,15 +178,10 @@ a:focus {
 	padding: 1.5rem;
 }
 
-.grid__item:nth-child(even) {
-	margin-top: 35vh;
-	text-align: right;
-}
-
 .grid__item-number {
 	display: block;
 	text-align: right;
-	font-size: 4.75rem;
+	font-size: 3rem;
 	line-height: 1;
 }
 
@@ -203,17 +203,6 @@ a:focus {
 	font-family: news-gothic-std, sans-serif;
 	line-height: 1.5;
 	padding-right: 1rem;
-}
-
-.grid__item:nth-child(even) .grid__item-description {
-	padding: 0 0 0 1rem;
-}
-
-.bigtype {
-	font-size: 5vw;
-	max-width: 1025px;
-	padding: 0 1rem;
-	margin: 17vh auto;
 }
 
 .bigimg {
@@ -239,20 +228,24 @@ a:focus {
 }
 
 .svgtext--2 text {
-	fill: #f3cd5b;
+	fill: #8569c2;
 }
 
 .svgtext--3 text {
 	font-size: 32px;
 }
 
+.svgtext--4 {
+	position: absolute;
+}
+
 .svgtext--4 text {
-	font-size: 32px;
-	fill: #a156cf;
+	font-size: 48px;
+	fill: #f9e9a4;
 }
 
 @media screen and (min-width: 53em) {
-	.frame {
+	.frame--screen {
 		position: absolute;
 		text-align: left;
 		z-index: 100;
@@ -283,6 +276,7 @@ a:focus {
 		justify-self: center;
 	}
 	.frame__heading {
+		margin: 0;
 		grid-area: heading;
 	}
 	.frame__demos {
@@ -299,5 +293,22 @@ a:focus {
 	}
 	.frame a {
 		pointer-events: auto;
+	}
+	.frame__counter {
+		display: flex;
+		margin: 0;
+	}
+	.intro {
+		min-height: 100vh;
+	}
+	.grid__item:nth-child(even) {
+		margin-top: 35vh;
+		text-align: right;
+	}
+	.grid__item:nth-child(even) .grid__item-description {
+		padding: 0 0 0 1rem;
+	}
+	.grid__item-number {
+		font-size: 4.75rem;
 	}
 }

@@ -1,7 +1,7 @@
 {
-  "name": "Terraforming",
+  "name": "AnimateSVGTextPath",
   "version": "1.0.0",
-  "description": "*How to use this template:*",
+  "description": "Demo showing how to animate SVG text on a path on scroll using the Intersection Observer API and SVG filters.",
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html --open",
@@ -11,15 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/codrops/*reponame*.git"
+    "url": "git://github.com/codrops/AnimateSVGTextPath.git"
   },
-  "keywords": [
-  ],
+  "keywords": [],
   "author": "Codrops",
   "license": "MIT",
   "homepage": "*homepage*",
   "bugs": {
-    "url": "https://github.com/codrops/*reponame*/issues"
+    "url": "https://github.com/codrops/AnimateSVGTextPath/issues"
   },
   "dependencies": {
     "parcel-bundler": "^1.12.4",

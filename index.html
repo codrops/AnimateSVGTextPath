@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Animating SVG Text on a Path on Scroll | Codrops</title>
+		<title>Animating SVG Text on a Path | Codrops</title>
 		<meta name="description" content="Animating SVG text on a path on scroll using the Intersection Observer API and SVG filters." />
 		<meta name="keywords" content="svg text, animation, scroll, svg filter, Intersection Observer" />
 		<meta name="author" content="Codrops" />
@@ -48,13 +48,13 @@
 			</defs>
 		</svg>
 		<main>
-			<div class="frame">
+			<div class="frame frame--screen">
 				<div class="frame__title-wrap">
-					<h1 class="frame__title">Animating SVG Text on a Path on Scroll</h1>
+					<h1 class="frame__title">Animating SVG Text on a Path</h1>
 					<div class="frame__links">
-						<a href="">Previous Demo</a>
-						<a href="">Article</a>
-						<a href="">GitHub</a>
+						<a href="https://tympanus.net/Development/AudioBasedImageDistortion/">Previous Demo</a>
+						<a href="https://tympanus.net/codrops/?p=47831">Article</a>
+						<a href="https://github.com/codrops/AnimateSVGTextPathScroll/">GitHub</a>
 					</div>
 				</div>
 				<h2 class="frame__heading">A NOVA space project</h2>
@@ -100,7 +100,7 @@
 				<path id="text-curve1" d="M 0 100 Q 250 200 500 100 Q 750 0 1000 100" fill="none"/>
 				<text filter="url(#blur)">
 					<textPath href="#text-curve1">
-						“You may think I’m small, but I have a universe inside my mind.”
+						You may think I’m small, but I have a universe inside my mind.
 					</textPath>
 				</text>
 			</svg>
@@ -108,7 +108,7 @@
 				<path id="text-curve11" d="M 0 100 Q 250 0 500 100 Q 750 200 1000 100" fill="none"/>
 				<text filter="url(#blur2)">
 					<textPath href="#text-curve11">
-						“Don't forget about the stardust. Don't forget about the quartz rocks in the woods. You are small. But you are also so much more.”
+						Don't forget about the stardust. Don't forget about the quartz rocks in the woods.
 					</textPath>
 				</text>
 			</svg>
@@ -144,15 +144,15 @@
 				<path id="text-curve2" d="M 0 50 Q 100 0 200 100 Q 300 200 650 50 C 750 0 750 150 1000 50" fill="none"/>
 				<text filter="url(#distortionFilter)">
 					<textPath href="#text-curve2">
-					You are a wave continuous with its ocean.
+					Dwell on the beauty of life. Watch the stars.
 					</textPath>
 				</text>
 			</svg>
 			<svg class="svgtext" data-filter-type="distortion" width="120%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1000 300">
-				<path id="text-curve22" d="M 0 50 Q 400 400 550 150 Q 600 0 1000 50 " fill="none"/>
+				<path id="text-curve22" d="M 0 200 Q 150 300 300 200 Q 700 0 1000 150" fill="none"/>
 				<text filter="url(#distortionFilter2)">
 					<textPath href="#text-curve22">
-					You are a wave continuous with its ocean.
+					The cosmos is within us. We are made of star-stuff.
 					</textPath>
 				</text>
 			</svg>
@@ -187,7 +187,7 @@
 				<path id="text-curve3" d="M 0 150 Q 200 50 500 50 Q 800 50 1000 150 " fill="none"/>
 				<text filter="url(#blur)">
 					<textPath href="#text-curve3">
-					Fuck you I won't do what you tell me
+					When it is dark enough, you can see the stars.
 					</textPath>
 				</text>
 			</svg>
@@ -195,7 +195,7 @@
 				<path id="text-curve4" d="M 0 150 Q 200 50 500 50 Q 800 50 1000 150 " fill="none"/>
 				<text filter="url(#blur)">
 					<textPath href="#text-curve4">
-						It is not the man who has too little, but the man who craves more, that is poor
+					It is not the man who has too little, but the man who craves more, that is poor.
 					</textPath>
 				</text>
 			</svg>
@@ -203,44 +203,52 @@
 				<path id="text-curve5" d="M 0 150 Q 200 50 500 50 Q 800 50 1000 150 " fill="none"/>
 				<text filter="url(#blur)">
 					<textPath href="#text-curve5">
-					Fuck you I won't do what you tell me
+					Live by love though the stars walk backward.
 					</textPath>
 				</text>
 			</svg>
 			<img class="bigimg" src="img/big2.jpg" alt="Some image" />
-			<svg style="position:absolute;" class="svgtext svgtext--4" data-filter-type="blur" width="120%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1000 200">
-				<path id="textcircle" d="M 0 0 Q 200 150 500 150 Q 850 150 1000 0 " fill="none"/>
-				<text filter="url(#blur)">
-					<textPath href="#textcircle">
-					Fuck you I won't do what you tell me Fuck you I won't do what you tell me Fuck you I won't do what you tell me
-					</textPath>
-				</text>
-			</svg>
-			<div class="grid">
-				<div class="grid__item">
-					<span class="grid__item-number">07</span>
-					<img class="grid__item-img" src="img/7.jpg" alt="Some image" />
-					<h3 class="grid__item-title">Icarian Engine</h3>
-					<p class="grid__item-description">And now Juno's Samos was on the left
-					side for Delos and Paros had been left behind
-					and on the right was Lebynthos and Kalymnos rich in honey,
-					when the boy began to rejoice in his bold flight
-					and deserted his leader, and attracted by a desire for the sky
-					he took his path went higher. </p>
-				</div>
-				<div class="grid__item">
-					<span class="grid__item-number">08</span>
-					<img class="grid__item-img" src="img/8.jpg" alt="Some image" />
-					<h3 class="grid__item-title">Neutrospace Accelerator</h3>
-					<p class="grid__item-description">The vicinity of the sun
-					softens the fragrant wax, the chains of the feathers;
-					the wax melted: he shook his bare arms
-					and lacking oarage he takes up no air,
-					and his mouth shouting his father's name
-					is swept up in the blue sea, which takes its name from him.</p>
+			<div class="grid-wrap">
+				<svg class="svgtext svgtext--4" data-filter-type="blur" width="120%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1000 200">
+					<path id="textcircle" d="M 0 0 Q 200 150 500 150 Q 850 150 1000 0 " fill="none"/>
+					<text filter="url(#blur)">
+						<textPath href="#textcircle">
+						Yours is the light by which my spirit's born: you are my sun, my moon, and all my stars.
+						</textPath>
+					</text>
+				</svg>
+				<div class="grid">
+					<div class="grid__item">
+						<span class="grid__item-number">07</span>
+						<img class="grid__item-img" src="img/7.jpg" alt="Some image" />
+						<h3 class="grid__item-title">Icarian Engine</h3>
+						<p class="grid__item-description">And now Juno's Samos was on the left
+						side for Delos and Paros had been left behind
+						and on the right was Lebynthos and Kalymnos rich in honey,
+						when the boy began to rejoice in his bold flight
+						and deserted his leader, and attracted by a desire for the sky
+						he took his path went higher. </p>
+					</div>
+					<div class="grid__item">
+						<span class="grid__item-number">08</span>
+						<img class="grid__item-img" src="img/8.jpg" alt="Some image" />
+						<h3 class="grid__item-title">Neutrospace Accelerator</h3>
+						<p class="grid__item-description">The vicinity of the sun
+						softens the fragrant wax, the chains of the feathers;
+						the wax melted: he shook his bare arms
+						and lacking oarage he takes up no air,
+						and his mouth shouting his father's name
+						is swept up in the blue sea, which takes its name from him.</p>
+					</div>
 				</div>
 			</div>
-			
+			<footer class="frame">
+				<div class="frame__links">
+					<a href="https://tympanus.net/Development/AudioBasedImageDistortion/">Previous Demo</a>
+					<a href="https://tympanus.net/codrops/?p=47831">Article</a>
+					<a href="https://github.com/codrops/AnimateSVGTextPath/">GitHub</a>
+				</div>
+			</footer>
 		</main>
 		<!--script src="https://tympanus.net/codrops/adpacks/demoad.js"></script-->
 		<script src="js/index.js"></script>
