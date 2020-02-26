@@ -3,13 +3,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Terraforming | Codrops</title>
-		<meta name="description" content="">
-		<meta name="keywords" content="">
+		<title>Animating SVG Text on a Path | Codrops</title>
+		<meta name="description" content="Animating SVG text on a path on scroll using the Intersection Observer API and SVG filters.">
+		<meta name="keywords" content="svg text, animation, scroll, svg filter, Intersection Observer">
 		<meta name="author" content="Codrops">
-		<link rel="shortcut icon" href="/favicon.26242483.ico">
+		<link rel="shortcut icon" href="favicon.2e5f6236.ico">
 		<link rel="stylesheet" href="https://use.typekit.net/rhw1vur.css">
-		<link rel="stylesheet" type="text/css" href="/base.98fd6c19.css">
+		<link rel="stylesheet" type="text/css" href="base.bd67a085.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 		<script>document.documentElement.className = "js";
 
@@ -21,8 +21,8 @@ var supportsCssVars = function supportsCssVars() {
 
 supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 		<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
-	<script src="/base.98fd6c19.js"></script></head>
-	<body class="demo-1 loading">
+	</head>
+	<body class="loading">
 		<svg class="hidden">
 			<defs>
 				<filter id="blur" x="-30%" y="-30%" width="160%" height="160%">
@@ -56,13 +56,13 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 			</defs>
 		</svg>
 		<main>
-			<div class="frame">
+			<div class="frame frame--screen">
 				<div class="frame__title-wrap">
-					<h1 class="frame__title">Animating text on a path</h1>
+					<h1 class="frame__title">Animating SVG Text on a Path</h1>
 					<div class="frame__links">
-						<a href="">Previous Demo</a>
-						<a href="">Article</a>
-						<a href="">GitHub</a>
+						<a href="https://tympanus.net/Development/AudioBasedImageDistortion/">Previous Demo</a>
+						<a href="https://tympanus.net/codrops/?p=47831">Article</a>
+						<a href="https://github.com/codrops/AnimateSVGTextPathScroll/">GitHub</a>
 					</div>
 				</div>
 				<h2 class="frame__heading">A NOVA space project</h2>
@@ -85,7 +85,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 			<div class="grid">
 				<div class="grid__item">
 					<span class="grid__item-number">01</span>
-					<img class="grid__item-img" src="/1.dc197a9a.jpg" alt="Some image">
+					<img class="grid__item-img" src="1.d5d0bbe2.jpg" alt="Some image">
 					<h3 class="grid__item-title">One man, one mission</h3>
 					<p class="grid__item-description">Daedalus in the meantime, hating Crete and his long exile
 					and having been touched by the love of his birthplace,
@@ -95,7 +95,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 				</div>
 				<div class="grid__item">
 					<span class="grid__item-number">02</span>
-					<img class="grid__item-img" src="/2.3ca6bb44.jpg" alt="Some image">
+					<img class="grid__item-img" src="2.b0539b47.jpg" alt="Some image">
 					<h3 class="grid__item-title">Geode planning</h3>
 					<p class="grid__item-description">He spoke and sends down his mind into unknown arts
 					and changes his nature. For he puts feathers in a row
@@ -108,7 +108,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 				<path id="text-curve1" d="M 0 100 Q 250 200 500 100 Q 750 0 1000 100" fill="none"></path>
 				<text filter="url(#blur)">
 					<textPath href="#text-curve1">
-						“You may think I’m small, but I have a universe inside my mind.”
+						You may think I’m small, but I have a universe inside my mind.
 					</textPath>
 				</text>
 			</svg>
@@ -116,14 +116,14 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 				<path id="text-curve11" d="M 0 100 Q 250 0 500 100 Q 750 200 1000 100" fill="none"></path>
 				<text filter="url(#blur2)">
 					<textPath href="#text-curve11">
-						“You may think I’m small, but I have a universe inside my mind may think I’m small, but I have a universe inside my mind.”
+						Don't forget about the stardust. Don't forget about the quartz rocks in the woods.
 					</textPath>
 				</text>
 			</svg>
 			<div class="grid">
 				<div class="grid__item">
 					<span class="grid__item-number">03</span>
-					<img class="grid__item-img" src="/3.a433b89d.jpg" alt="Some image">
+					<img class="grid__item-img" src="3.caf4bd5d.jpg" alt="Some image">
 					<h3 class="grid__item-title">Disaster management</h3>
 					<p class="grid__item-description">Then he binds the middle ones with thread and the last feathers with wax
 					and then bends what he has created by a small curvature as
@@ -135,7 +135,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 				</div>
 				<div class="grid__item">
 					<span class="grid__item-number">04</span>
-					<img class="grid__item-img" src="/4.c6d96be5.jpg" alt="Some image">
+					<img class="grid__item-img" src="4.563dcc99.jpg" alt="Some image">
 					<h3 class="grid__item-title">Impact theory</h3>
 					<p class="grid__item-description">After the finishing touch had been placed
 					on the work, the craftsman balanced his body
@@ -147,27 +147,27 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 					or Helice, or the drawn sword of Orion.</p>
 				</div>
 			</div>
-			<img class="bigimg" src="/big1.530d5ed8.jpg" alt="Some image">
+			<img class="bigimg" src="big1.0ab44b73.jpg" alt="Some image">
 			<svg class="svgtext svgtext--2" data-filter-type="distortion" width="120%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1000 200">
 				<path id="text-curve2" d="M 0 50 Q 100 0 200 100 Q 300 200 650 50 C 750 0 750 150 1000 50" fill="none"></path>
 				<text filter="url(#distortionFilter)">
 					<textPath href="#text-curve2">
-					You are a wave continuous with its ocean.
+					Dwell on the beauty of life. Watch the stars.
 					</textPath>
 				</text>
 			</svg>
 			<svg class="svgtext" data-filter-type="distortion" width="120%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1000 300">
-				<path id="text-curve22" d="M 0 50 Q 400 400 550 150 Q 600 0 1000 50 " fill="none"></path>
+				<path id="text-curve22" d="M 0 200 Q 150 300 300 200 Q 700 0 1000 150" fill="none"></path>
 				<text filter="url(#distortionFilter2)">
 					<textPath href="#text-curve22">
-					You are a wave continuous with its ocean.
+					The cosmos is within us. We are made of star-stuff.
 					</textPath>
 				</text>
 			</svg>
 			<div class="grid">
 				<div class="grid__item">
 					<span class="grid__item-number">05</span>
-					<img class="grid__item-img" src="/5.689b68fd.jpg" alt="Some image">
+					<img class="grid__item-img" src="5.1c2ed3fb.jpg" alt="Some image">
 					<h3 class="grid__item-title">Incubation assertion</h3>
 					<p class="grid__item-description">With me leading, seize the way! 
 					He hands over at the same time the rules of flying
@@ -179,7 +179,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 				</div>
 				<div class="grid__item">
 					<span class="grid__item-number">06</span>
-					<img class="grid__item-img" src="/6.e96dcfff.jpg" alt="Some image">
+					<img class="grid__item-img" src="6.df718cc7.jpg" alt="Some image">
 					<h3 class="grid__item-title">Hyperdrive vessel</h3>
 					<p class="grid__item-description">Just as a bird
 					who has led forth a tender offspring from a high nest into the air,
@@ -195,7 +195,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 				<path id="text-curve3" d="M 0 150 Q 200 50 500 50 Q 800 50 1000 150 " fill="none"></path>
 				<text filter="url(#blur)">
 					<textPath href="#text-curve3">
-					Fuck you I won't do what you tell me
+					When it is dark enough, you can see the stars.
 					</textPath>
 				</text>
 			</svg>
@@ -203,7 +203,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 				<path id="text-curve4" d="M 0 150 Q 200 50 500 50 Q 800 50 1000 150 " fill="none"></path>
 				<text filter="url(#blur)">
 					<textPath href="#text-curve4">
-						It is not the man who has too little, but the man who craves more, that is poor
+					It is not the man who has too little, but the man who craves more, that is poor.
 					</textPath>
 				</text>
 			</svg>
@@ -211,46 +211,54 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 				<path id="text-curve5" d="M 0 150 Q 200 50 500 50 Q 800 50 1000 150 " fill="none"></path>
 				<text filter="url(#blur)">
 					<textPath href="#text-curve5">
-					Fuck you I won't do what you tell me
+					Live by love though the stars walk backward.
 					</textPath>
 				</text>
 			</svg>
-			<img class="bigimg" src="/big2.f61a487e.jpg" alt="Some image">
-			<svg style="position:absolute;" class="svgtext svgtext--4" data-filter-type="blur" width="120%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1000 200">
-				<path id="textcircle" d="M 0 0 Q 200 150 500 150 Q 850 150 1000 0 " fill="none"></path>
-				<text filter="url(#blur)">
-					<textPath href="#textcircle">
-					Fuck you I won't do what you tell me Fuck you I won't do what you tell me Fuck you I won't do what you tell me
-					</textPath>
-				</text>
-			</svg>
-			<div class="grid">
-				<div class="grid__item">
-					<span class="grid__item-number">07</span>
-					<img class="grid__item-img" src="/7.2d66e3ed.jpg" alt="Some image">
-					<h3 class="grid__item-title">Icarian Engine</h3>
-					<p class="grid__item-description">And now Juno's Samos was on the left
-					side for Delos and Paros had been left behind
-					and on the right was Lebynthos and Kalymnos rich in honey,
-					when the boy began to rejoice in his bold flight
-					and deserted his leader, and attracted by a desire for the sky
-					he took his path went higher. </p>
-				</div>
-				<div class="grid__item">
-					<span class="grid__item-number">08</span>
-					<img class="grid__item-img" src="/8.f4323fe0.jpg" alt="Some image">
-					<h3 class="grid__item-title">Neutrospace Accelerator</h3>
-					<p class="grid__item-description">The vicinity of the sun
-					softens the fragrant wax, the chains of the feathers;
-					the wax melted: he shook his bare arms
-					and lacking oarage he takes up no air,
-					and his mouth shouting his father's name
-					is swept up in the blue sea, which takes its name from him.</p>
+			<img class="bigimg" src="big2.839b2789.jpg" alt="Some image">
+			<div class="grid-wrap">
+				<svg class="svgtext svgtext--4" data-filter-type="blur" width="120%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1000 200">
+					<path id="textcircle" d="M 0 0 Q 200 150 500 150 Q 850 150 1000 0 " fill="none"></path>
+					<text filter="url(#blur)">
+						<textPath href="#textcircle">
+						Yours is the light by which my spirit's born: you are my sun, my moon, and all my stars.
+						</textPath>
+					</text>
+				</svg>
+				<div class="grid">
+					<div class="grid__item">
+						<span class="grid__item-number">07</span>
+						<img class="grid__item-img" src="7.fd69eac9.jpg" alt="Some image">
+						<h3 class="grid__item-title">Icarian Engine</h3>
+						<p class="grid__item-description">And now Juno's Samos was on the left
+						side for Delos and Paros had been left behind
+						and on the right was Lebynthos and Kalymnos rich in honey,
+						when the boy began to rejoice in his bold flight
+						and deserted his leader, and attracted by a desire for the sky
+						he took his path went higher. </p>
+					</div>
+					<div class="grid__item">
+						<span class="grid__item-number">08</span>
+						<img class="grid__item-img" src="8.e174b0a5.jpg" alt="Some image">
+						<h3 class="grid__item-title">Neutrospace Accelerator</h3>
+						<p class="grid__item-description">The vicinity of the sun
+						softens the fragrant wax, the chains of the feathers;
+						the wax melted: he shook his bare arms
+						and lacking oarage he takes up no air,
+						and his mouth shouting his father's name
+						is swept up in the blue sea, which takes its name from him.</p>
+					</div>
 				</div>
 			</div>
-			
+			<footer class="frame">
+				<div class="frame__links">
+					<a href="https://tympanus.net/Development/AudioBasedImageDistortion/">Previous Demo</a>
+					<a href="https://tympanus.net/codrops/?p=47831">Article</a>
+					<a href="https://github.com/codrops/AnimateSVGTextPath/">GitHub</a>
+				</div>
+			</footer>
 		</main>
 		<!--script src="https://tympanus.net/codrops/adpacks/demoad.js"></script-->
-		<script src="/js.00a46daa.js"></script>
+		<script src="js.464d568e.js"></script>
 	</body>
 </html>
