@@ -8,9 +8,31 @@ A demo where we are animating SVG text on a path on scroll using the Intersectio
 
 [Demo](http://tympanus.net/Development/AnimateSVGTextPath/)
 
+
+## Installation
+
+Install dependencies:
+
+```
+npm install
+```
+
+Compile the code for development and start a local server:
+
+```
+npm start
+```
+
+Create the build:
+
+```
+npm run build
+```
+
 ## Credits
 
 - [imagesLoaded](https://imagesloaded.desandro.com/) by Dave DeSandro
+- Images from [Unsplash.com](https://unsplash.com/)
 
 ## Misc
 
