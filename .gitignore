@@ -1,4 +1,4 @@
 /node_modules
-dist
+.cache
 .DS_Store
 package-lock.json

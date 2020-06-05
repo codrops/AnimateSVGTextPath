@@ -1,0 +1,314 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 17px;
+}
+
+body {
+	margin: 0;
+	--color-text: #fff;
+	--color-bg: #0a0104;
+	--color-link: #5c5c5c;
+	--color-link-hover: #fff;
+	--color-description: #504f4f;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	font-family: poynter-oldstyle-display-con, serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+main {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+/* Page Loader */
+.js .loading::before,
+.js .loading::after {
+	content: '';
+	position: fixed;
+	z-index: 1000;
+}
+
+.js .loading::before {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--color-bg);
+}
+
+.js .loading::after {
+	top: 50%;
+	left: 50%;
+	width: 60px;
+	height: 60px;
+	margin: -30px 0 0 -30px;
+	border-radius: 50%;
+	opacity: 0.4;
+	background: var(--color-link);
+	animation: loaderAnim 0.7s linear infinite alternate forwards;
+
+}
+
+@keyframes loaderAnim {
+	to {
+		opacity: 1;
+		transform: scale3d(0.5,0.5,1);
+	}
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-link);
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	color: var(--color-link-hover);
+	outline: none;
+}
+
+.hidden {
+	position: absolute;
+	pointer-events: none;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+.frame {
+	padding: 3rem 5vw;
+	text-align: center;
+	position: relative;
+	z-index: 1000;
+	text-transform: uppercase;
+}
+
+.frame__title {
+	font-size: 1rem;
+	margin: 0 0 1rem;
+	font-weight: normal;
+}
+
+.frame__links {
+	display: inline;
+}
+
+.frame__links a:not(:last-child) {
+	margin-right: 1rem;
+}
+
+.frame__heading {
+	margin: 1rem 0;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.frame__counter {
+	margin: 2rem 0;
+	align-items: baseline;
+	line-height: 0.8rem;
+	text-align: center;
+}
+
+.frame__counter span {
+	margin: 0 0.25rem;
+}
+
+.frame__counter-text:nth-child(2) {
+	margin: 0 1.5rem 0 0;
+}
+
+.frame__counter-number {
+	font-size: 200%;
+}
+
+.intro {
+	pointer-events: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.intro__title {
+	font-size: 19vw;
+	margin: 0;
+	font-weight: 400;
+	line-height: 1;
+}
+
+.intro__hint {
+	position: relative;
+	text-transform: uppercase;
+	margin: 8vh 0 0 0;
+}
+
+.intro__hint::after {
+	content: '';
+	position: absolute;
+	width: 1px;
+	height: 2rem;
+	top: calc(100% + 2rem);
+	left: 50%;
+	background-color: currentColor;
+}
+
+.grid-wrap {
+	position: relative;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, calc(390px + 3rem)));
+	justify-content: center;
+	grid-gap: 10vw;
+	margin: 15rem auto;
+}
+
+.grid__item {
+	padding: 1.5rem;
+}
+
+.grid__item-number {
+	display: block;
+	text-align: right;
+	font-size: 3rem;
+	line-height: 1;
+}
+
+.grid__item-img {
+	margin: 1rem 0 1.75rem;
+	max-width: 100%;
+	display: block;
+}
+
+.grid__item-title {
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin: 0 0 2.75rem 0;
+}
+
+.grid__item-description {
+	color: var(--color-description);
+	font-family: news-gothic-std, sans-serif;
+	line-height: 1.5;
+	padding-right: 1rem;
+}
+
+.bigimg {
+	display: block;
+	width: 100%;
+	max-width: calc(1025px - 3rem);
+	margin: 25vh auto;
+}
+
+.svgtext {
+	flex: none;
+	position: relative;
+	left: -10%;
+}
+
+.svgtext text {
+	fill: #fff;
+	font-size: 42px;
+}
+
+.svgtext--1 text {
+	fill: #fff;
+}
+
+.svgtext--2 text {
+	fill: #8569c2;
+}
+
+.svgtext--3 text {
+	font-size: 32px;
+}
+
+.svgtext--4 {
+	position: absolute;
+}
+
+.svgtext--4 text {
+	font-size: 48px;
+	fill: #f9e9a4;
+}
+
+@media screen and (min-width: 53em) {
+	.frame--screen {
+		position: absolute;
+		text-align: left;
+		z-index: 100;
+		top: 0;
+		left: 0;
+		display: grid;
+		align-content: space-between;
+		width: 100%;
+		max-width: none;
+		height: 100vh;
+		padding: 2.25rem 2.5rem;
+		pointer-events: none;
+		grid-template-columns: 30% 40% 30%;
+		grid-template-rows: auto auto auto;
+		grid-template-areas: 'heading counter links'
+							'... ... ...'
+							'title title ...';
+	}
+	.frame__title-wrap {
+		grid-area: title;
+		display: flex;
+	}
+	.frame__title {
+		margin: 0 4rem 0 0;
+	}
+	.frame__counter {
+		grid-area: counter;
+		justify-self: center;
+	}
+	.frame__heading {
+		margin: 0;
+		grid-area: heading;
+	}
+	.frame__demos {
+		margin: 0;
+		grid-area: demos;
+		justify-self: end;
+	}
+	.frame__links {
+		padding: 0;
+		justify-self: end;
+	}
+	.frame__links--header {
+		grid-area: links;
+	}
+	.frame a {
+		pointer-events: auto;
+	}
+	.frame__counter {
+		display: flex;
+		margin: 0;
+	}
+	.intro {
+		min-height: 100vh;
+	}
+	.grid__item:nth-child(even) {
+		margin-top: 35vh;
+		text-align: right;
+	}
+	.grid__item:nth-child(even) .grid__item-description {
+		padding: 0 0 0 1rem;
+	}
+	.grid__item-number {
+		font-size: 4.75rem;
+	}
+}
